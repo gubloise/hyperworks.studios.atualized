@@ -1,4 +1,10 @@
 function mudarTema() {
-    document.body.style.background = 
-        document.body.style.background === "black" ? "linear-gradient(135deg, #0f2027, #203a43, #2c5364)" : "black";
+    let body = document.body;
+    if (body.style.background === "white") {
+        body.style.background = "gray";
+        body.style.color = "white";
+    } else {
+        body.style.background = "white";
+        body.style.color = "black";
+    }
 }
